@@ -388,6 +388,7 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
+  appearance: button;
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -445,7 +446,8 @@ legend + * {
 
 [type=search] {
   outline-offset: -2px;
-  -webkit-appearance: textfield;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 /* rtl:raw:
@@ -466,7 +468,10 @@ legend + * {
 
 ::file-selector-button {
   font: inherit;
-  -webkit-appearance: button;
+  background: #ddd;
+  border: 1px solid #aaa;
+  padding: 5px 10px;
+  cursor: pointer;
 }
 
 output {
@@ -2851,9 +2856,8 @@ textarea.form-control-lg {
   --bs-btn-color: #fff;
   --bs-btn-bg: #F76711;
   --bs-btn-border-color: #F76711;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #558985;
-  --bs-btn-hover-border-color: #50817e;
+  --bs-btn-hover-bg: #F76711;
+  --bs-btn-hover-border-color: #F76711;
   --bs-btn-focus-shadow-rgb: 123, 175, 172;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #50817e;
@@ -11199,6 +11203,6 @@ body {
 }
 
 footer {
-  padding: 5rem 0
-  background-color: #013324; /* Falta el punto y coma aquí */
+  padding: 5rem 0; 
+  background-color: #013324;
 }
