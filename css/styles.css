@@ -10,6 +10,8 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&family=Montserrat:wght@400&display=swap');
+
 :root {
   --bs-blue: #F76711;
   --bs-indigo: #6610f2;
@@ -97,7 +99,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: 'Montserrat', sans-serif;
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -124,7 +126,9 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
+  font-family: 'Work Sans', sans-serif;
   font-size: calc(1.375rem + 1.5vw);
+  text-transform: lowercase;
 }
 @media (min-width: 1200px) {
   h1, .h1 {
@@ -132,7 +136,12 @@ h1, .h1 {
   }
 }
 
+h1::first-letter, .h1::first-letter {
+  text-transform: uppercase;
+}
+
 h2, .h2 {
+  font-family: 'Montserrat', sans-serif;
   font-size: calc(1.325rem + 0.9vw);
 }
 @media (min-width: 1200px) {
@@ -8312,17 +8321,17 @@ textarea.form-control-lg {
 
 .bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #013324 !important;
 }
 
-.bg-black {
+.bg-dark {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #013324 !important;
 }
 
 .bg-white {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+  background-color: #013324 !important;
 }
 
 .bg-body {
@@ -11080,7 +11089,7 @@ body {
   background-size: cover;
 }
 .masthead h1, .masthead .h1 {
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Work Sans', sans-serif;
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
@@ -11092,6 +11101,7 @@ body {
 .masthead h2, .masthead .h2 {
   max-width: 20rem;
   font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
 }
 @media (min-width: 768px) {
   .masthead h1, .masthead .h1 {
